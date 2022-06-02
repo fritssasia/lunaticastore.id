@@ -8,6 +8,7 @@
 
 .nav-pills .nav-link {
     color: #ffffff;
+    font-size: 12px;
 }
 
 .nav-pills .nav-link.active {
@@ -68,8 +69,14 @@ p {
     border-radius: 100px;
 }
 
+
+/* === RESPONSIVE BREAKPOINT === */
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .nav-pills .nav-link {
+        font-size: 14px;
+    }
+    
     #list-product-wrapper .card {
         height: 100%;
     }
