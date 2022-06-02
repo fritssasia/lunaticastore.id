@@ -1,6 +1,23 @@
-.list-product {
-    padding-top: 30px;
+/* === NAVIGATION BAR : START === */
+.nav-pills {
+    background-color: #43267D;
+    color: #ffffff;
+    border-color: transparent;
+    border-radius: 0;
 }
+
+.nav-pills .nav-link {
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #ffffff;
+    color: #43267D;
+    /* border-bottom: 3px solid #ffffff; */
+    width: 100%;
+    border-radius: 100px;
+}
+/* === NAVIGATION BAR : END === */
 
 #list-product-wrapper .card {
     position: relative;
@@ -19,6 +36,7 @@
     display: block;
     margin: 0 auto;
     margin-top: -35px;
+    border: 2px solid #43267D;
 }
 
 #list-product-wrapper .card-body {
