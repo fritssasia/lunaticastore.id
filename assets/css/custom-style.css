@@ -1,0 +1,19 @@
+#list-product .card {
+    position: relative;
+}
+
+#list-product .card-body {
+    text-align: center;
+}
+
+#list-product .card-footer {
+    background-color: transparent;
+    border-top: 0;
+}
+
+#list-product .card .card-img-top {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    margin-top: -25px;
+}
