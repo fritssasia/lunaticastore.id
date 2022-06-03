@@ -13,7 +13,7 @@ Thanks for not changing the copyright
     <meta charset="utf-8" />
     <title> LunaticaStore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="dawYjX7cHnMrYyQGRFEPcm4x2WX9uI6ZqsrHrYU4">
+    <meta name="csrf-token" content="Gjmd0tgtAEiJEb4nel59fYKkPvKu9GWSoCuKu73U">
     <meta content="LunaticaStore THE BEST VOUCHER GAME PROVIDER." name="description" />
     <meta content="raf_lii" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,6 +28,8 @@ Thanks for not changing the copyright
     <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" disabled />
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/custom-style.css">
+
 
     <!-- icons -->
     <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -109,7 +111,7 @@ Thanks for not changing the copyright
         }
 
         div input[type=radio]:checked+label {
-            background-color: #0275d8 !important;
+            background-color: #7858A6 !important;
         }
 
         .btn-check:checked+.btn-secondary {
@@ -139,7 +141,7 @@ Thanks for not changing the copyright
         }
 
         .black-strip {
-            background-color: #dc3545;
+            background-color: #43267D;
             position: absolute;
             width: 40px;
             height: 5px;
@@ -156,7 +158,8 @@ Thanks for not changing the copyright
         }
 
         .about {
-            margin-top: 100px;
+            margin-top: 200px;
+            margin-bottom: 50px;
         }
 
         .social {
@@ -245,8 +248,6 @@ Thanks for not changing the copyright
         }
     </style>
 
-    <link rel="stylesheet" href="/assets/css/custom-style.css">
-
 </head>
 
 <body class="loading" data-layout-mode="horizontal"
@@ -332,7 +333,8 @@ Thanks for not changing the copyright
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="https://wa.me/+62821-1545-6404">
+                                <a class="nav-link dropdown-toggle arrow-none" href="https://wa.me/6281282186998"
+                                    target="_blank">
                                     <i class="fa fa-phone"></i>
                                     <span> Hubungi Kami </span>
                                 </a>
@@ -350,13 +352,13 @@ Thanks for not changing the copyright
         <div class="content-page">
             <div class="content">
                 <!-- Start Content-->
-                <div class="container-fluid px-0 px-md-2">
+                <div class="container-fluid">
                     <!-- Slider main container -->
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleI  ndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-interval="4000">
@@ -381,18 +383,21 @@ Thanks for not changing the copyright
                     <!-- === NAVIGATION BAR : START === -->
                     <ul class="nav nav-pills nav-fill px-2 py-3" id="TabNavMenu" role="tablist">
                         <li class="nav-item text-center" role="presentation">
-                            <button class="nav-link py-2 active" id="nav-mobile-legends" data-bs-toggle="tab" data-bs-target="#tab-content-mobile-legends" type="button"
-                                role="tab" aria-controls="home" aria-selected="true">Mobile Legends</button>
-                        </li>
-                        
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link py-2" id="nav-topup-game" data-bs-toggle="tab" data-bs-target="#tab-content-topup-game" type="button"
-                                role="tab" aria-controls="profile" aria-selected="false">TopUp Game</button>
+                            <button class="nav-link py-2 active" id="nav-mobile-legends" data-bs-toggle="tab"
+                                data-bs-target="#tab-content-mobile-legends" type="button" role="tab"
+                                aria-controls="home" aria-selected="true">Mobile Legends</button>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link py-2" id="nav-topup-voucher" data-bs-toggle="tab" data-bs-target="#tab-content-topup-voucher" type="button"
-                                role="tab" aria-controls="contact" aria-selected="false">TopUp Voucher</button>
+                            <button class="nav-link py-2" id="nav-topup-game" data-bs-toggle="tab"
+                                data-bs-target="#tab-content-topup-game" type="button" role="tab"
+                                aria-controls="profile" aria-selected="false">TopUp Game</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link py-2" id="nav-topup-voucher" data-bs-toggle="tab"
+                                data-bs-target="#tab-content-topup-voucher" type="button" role="tab"
+                                aria-controls="contact" aria-selected="false">TopUp Voucher</button>
                         </li>
                     </ul>
                     <!-- === NAVIGATION BAR : END === -->
@@ -401,27 +406,15 @@ Thanks for not changing the copyright
                     <section class="tab-content py-3" id="list-product-wrapper">
 
                         <!-- --- MOBILE LEGENDS : START --- -->
-                        <div class="tab-pane fade show active" id="tab-content-mobile-legends" role="tabpanel" aria-labelledby="tab-content-mobile-legend">
+                        <div class="tab-pane fade show active" id="tab-content-mobile-legends" role="tabpanel"
+                            aria-labelledby="tab-content-mobile-legend">
 
                             <div class="list-product" id="top-up-voucher">
                                 <h3 class="uppercase">Mobile Legends</h3>
                                 <span class="black-strip"></span>
-                                <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 gx-1 gx-lg-2 gy-5 justify-content-center mt-1">
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/free_fire_new_tile.png" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Free Fire</h5>
-                                                <p class="card-text">Diamond Instant</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/free-fire" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
+                                <div
+                                    class="row row-cols-3 row-cols-md-4 row-cols-lg-6 gx-1 gx-lg-2 gy-5 justify-content-center mt-1">
+
                                     <div class="col">
                                         <div class="card">
                                             <img src="/assets/thumbnail/mlproduct.jpg" class="card-img-top" alt="ml">
@@ -430,54 +423,12 @@ Thanks for not changing the copyright
                                                 <p class="card-text">Fast</p>
                                             </div>
                                             <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/mobile-legend2" class="btn btn-primary buttonSelect btn-lg">
+                                                <a href="https://lunaticastore.id/game/mobile-legend2"
+                                                    class="btn btn-primary buttonSelect btn-lg">
                                                     Top Up</a>
                                             </div>
                                         </div>
                                     </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/1653398498.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">PUBG Mobile</h5>
-                                                <p class="card-text">Pubg ini dik</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/pubgm" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/1653398676.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Valorant</h5>
-                                                <p class="card-text">Ini Valorant dek</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/valorant" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/1653398988.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">League Of Legends Wild Rift</h5>
-                                                <p class="card-text">LOL AMAT DEK</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/lolwr" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
                                     <div class="col">
                                         <div class="card">
                                             <img src="/assets/thumbnail/1653397657.jpg" class="card-img-top" alt="ml">
@@ -486,54 +437,44 @@ Thanks for not changing the copyright
                                                 <p class="card-text">ini fast</p>
                                             </div>
                                             <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/mlbc" class="btn btn-primary buttonSelect btn-lg">
+                                                <a href="https://lunaticastore.id/game/mlbc"
+                                                    class="btn btn-primary buttonSelect btn-lg">
                                                     Top Up</a>
                                             </div>
                                         </div>
                                     </div>
-                            
                                 </div>
                             </div>
 
                         </div>
+
                         <!-- --- MOBILE LEGENDS : END --- -->
 
                         <!-- --- TOP UP GAME : START -->
-                        <div class="tab-pane fade" id="tab-content-topup-game" role="tabpanel" aria-labelledby="tab-content-topup-game">
+                        <div class="tab-pane fade" id="tab-content-topup-game" role="tabpanel"
+                            aria-labelledby="tab-content-topup-game">
 
                             <div class="list-product" id="top-up-game">
                                 <h3 class="uppercase">TopUp Game</h3>
                                 <span class="black-strip"></span>
-                                <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 gx-1 gx-lg-2 gy-5 justify-content-center mt-1">
-                            
+                                <div
+                                    class="row row-cols-3 row-cols-md-4 row-cols-lg-6 gx-1 gx-lg-2 gy-5 justify-content-center mt-1">
+
                                     <div class="col">
                                         <div class="card">
-                                            <img src="/assets/thumbnail/free_fire_new_tile.png" class="card-img-top" alt="ml">
+                                            <img src="/assets/thumbnail/free_fire_new_tile.png" class="card-img-top"
+                                                alt="ml">
                                             <div class="card-body">
                                                 <h5 class="card-title">Free Fire</h5>
                                                 <p class="card-text">Diamond Instant</p>
                                             </div>
                                             <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/free-fire" class="btn btn-primary buttonSelect btn-lg">
+                                                <a href="https://lunaticastore.id/game/free-fire"
+                                                    class="btn btn-primary buttonSelect btn-lg">
                                                     Top Up</a>
                                             </div>
                                         </div>
                                     </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/mlproduct.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Mobile Legends Paket B</h5>
-                                                <p class="card-text">Fast</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/mobile-legend2" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
                                     <div class="col">
                                         <div class="card">
                                             <img src="/assets/thumbnail/1653398498.jpg" class="card-img-top" alt="ml">
@@ -542,12 +483,12 @@ Thanks for not changing the copyright
                                                 <p class="card-text">Pubg ini dik</p>
                                             </div>
                                             <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/pubgm" class="btn btn-primary buttonSelect btn-lg">
+                                                <a href="https://lunaticastore.id/game/pubgm"
+                                                    class="btn btn-primary buttonSelect btn-lg">
                                                     Top Up</a>
                                             </div>
                                         </div>
                                     </div>
-                            
                                     <div class="col">
                                         <div class="card">
                                             <img src="/assets/thumbnail/1653398676.jpg" class="card-img-top" alt="ml">
@@ -556,12 +497,12 @@ Thanks for not changing the copyright
                                                 <p class="card-text">Ini Valorant dek</p>
                                             </div>
                                             <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/valorant" class="btn btn-primary buttonSelect btn-lg">
+                                                <a href="https://lunaticastore.id/game/valorant"
+                                                    class="btn btn-primary buttonSelect btn-lg">
                                                     Top Up</a>
                                             </div>
                                         </div>
                                     </div>
-                            
                                     <div class="col">
                                         <div class="card">
                                             <img src="/assets/thumbnail/1653398988.jpg" class="card-img-top" alt="ml">
@@ -570,146 +511,51 @@ Thanks for not changing the copyright
                                                 <p class="card-text">LOL AMAT DEK</p>
                                             </div>
                                             <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/lolwr" class="btn btn-primary buttonSelect btn-lg">
+                                                <a href="https://lunaticastore.id/game/lolwr"
+                                                    class="btn btn-primary buttonSelect btn-lg">
                                                     Top Up</a>
                                             </div>
                                         </div>
                                     </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/1653397657.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Mobile Legends Paket A</h5>
-                                                <p class="card-text">ini fast</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/mlbc" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/free_fire_new_tile.png" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Free Fire</h5>
-                                                <p class="card-text">Diamond Instant</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/free-fire" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/mlproduct.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Mobile Legends Paket B</h5>
-                                                <p class="card-text">Fast</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/mobile-legend2" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/1653398498.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">PUBG Mobile</h5>
-                                                <p class="card-text">Pubg ini dik</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/pubgm" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/1653398676.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Valorant</h5>
-                                                <p class="card-text">Ini Valorant dek</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/valorant" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/1653398988.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">League Of Legends Wild Rift</h5>
-                                                <p class="card-text">LOL AMAT DEK</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/lolwr" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="col">
-                                        <div class="card">
-                                            <img src="/assets/thumbnail/1653397657.jpg" class="card-img-top" alt="ml">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Mobile Legends Paket A</h5>
-                                                <p class="card-text">ini fast</p>
-                                            </div>
-                                            <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/mlbc" class="btn btn-primary buttonSelect btn-lg">
-                                                    Top Up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
+
                                 </div>
                             </div>
-                            
+
                         </div>
                         <!-- --- TOP UP GAME : END -->
 
                         <!-- --- TOP UP VOUCHER : START -->
-                        <div class="tab-pane fade" id="tab-content-topup-voucher" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="tab-content-topup-voucher" role="tabpanel"
+                            aria-labelledby="contact-tab">
 
                             <div class="list-product" id="top-up-voucher">
                                 <h3 class="uppercase">TopUp Voucher</h3>
                                 <span class="black-strip"></span>
-                                <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 gx-1 gx-lg-2 gy-5 justify-content-center mt-1">
-                            
+                                <div
+                                    class="row row-cols-3 row-cols-md-4 row-cols-lg-6 gx-1 gx-lg-2 gy-5 justify-content-center mt-1">
+
                                     <div class="col">
                                         <div class="card">
-                                            <img src="/assets/thumbnail/1653397657.jpg" class="card-img-top" alt="ml">
+                                            <img src="/assets/thumbnail/tsel.jpeg" class="card-img-top" alt="ml">
                                             <div class="card-body">
-                                                <h5 class="card-title">Mobile Legends Paket A</h5>
-                                                <p class="card-text">ini fast</p>
+                                                <h5 class="card-title">Telkomsel</h5>
+                                                <p class="card-text">top up pulsa tsel</p>
                                             </div>
                                             <div class="card-footer mx-auto">
-                                                <a href="https://lunaticastore.id/game/mlbc" class="btn btn-primary buttonSelect btn-lg">
+                                                <a href="https://lunaticastore.id/game/telkomsel"
+                                                    class="btn btn-primary buttonSelect btn-lg">
                                                     Top Up</a>
                                             </div>
                                         </div>
                                     </div>
-                            
+
                                 </div>
                             </div>
-                            
+
                         </div>
                         <!-- --- TOP UP VOUCHER : END -->
                     </section>
                     <!-- === NAVIGATION BAR CONTENT : END === -->
-
                 </div> <!-- container -->
 
             </div> <!-- content -->
@@ -721,66 +567,82 @@ Thanks for not changing the copyright
                             <h3 class="uppercase text-white">LunaticaStore</h3>
                             <span class="black-strip"></span>
                             <div class="mt-4">
-                                <span class="fw-light">LunaticaStore Penyedia Layanan Top-Up Game Favorite-mu Tanpa Ribet,
+                                <span class="fw-light">LunaticaStore Penyedia Layanan Top-Up Game Favorite-mu Tanpa
+                                    Ribet,
                                     Nikmati Pengalaman Top-Up Yang Menyenangkan Bersama Kami. Kami Menyediakan
                                     Berbagai Metode Pembayaran Yang Mudah Dan Menawarkan Banyak Judul Game.</span>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="uppercase text-white">Pembayaran</h3>
+                            <h3 class="uppercase text-white text-center">Pembayaran</h3>
                             <span class="black-strip"></span>
                             <div class="mt-4 gx-2">
-                                <img src="https://bobontopup.com/assets/images/payment/alfamart.png">
-                                <img src="https://bobontopup.com/assets/images/payment/bca.png">
-                                <img src="https://bobontopup.com/assets/images/payment/mandiri.png">
-                                <img src="https://bobontopup.com/assets/images/payment/bri.png">
-                                <img src="https://bobontopup.com/assets/images/payment/bni.png">
-                                <img src="https://lunaticastore.id/assets/sampoerna.png" width="90px" height="41px">
-                                <img src="https://lunaticastore.id/assets/permata.png" width="90px" height="41px">
-                                <img src="https://rexonmarket.id/assets/payment/ovo.png">
-                                <img src="https://bobontopup.com/assets/images/payment/shopeepay.png">
-                                <img src="https://lunaticastore.id/assets/link.png" width="90px" height="41px">
-                                <img src="https://bobontopup.com/assets/images/payment/qris.png">
+                                <marquee>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Alfamart_logo.svg"
+                                        width="90px" height="41px">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png"
+                                        width="90px" height="41px">
+                                    <img src="https://hopestore.id/assets/img/bca_footer.png" width="90px"
+                                        height="41px">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/1200px-Bank_Mandiri_logo_2016.svg.png"
+                                        width="90px" height="41px">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png"
+                                        width="90px" height="41px">
+                                    <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png"
+                                        width="90px" height="41px">
+                                    <img src="https://lunaticastore.id/assets/permata.png" width="90px" height="41px">
+                                    <img src="https://rexonmarket.id/assets/payment/ovo.png">
+                                    <img src="https://lelogama.go-jek.com/logo/GoPay-white.text.png" width="90px"
+                                        height="41px">
+                                    <img src="https://hopestore.id/assets/img/dana_footer.png">
+                                    <img src="https://hopestore.id/assets/img/shopay_footer.png">
+                                    <img src="https://lunaticastore.id/assets/link.png" width="90px" height="41px">
+                                    <img src="https://hopestore.id/assets/img/qris_footer.png">
+                                </marquee>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Footer Start -->
-            <footer class="footer" style="background-color:white;">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script> &copy; Copyright LunaticaStore
-                        </div>
-                        <div class="col-md-6">
-                            <div class="text-md-end footer-links d-none d-sm-block">
-                                <a href="javascript:void(0);">About Us</a>
-                                <a href="javascript:void(0);">Help</a>
-                                <a href="javascript:void(0);">Contact Us</a>
-                            </div>
-                        </div>
+        </div> <!-- container -->
+
+    </div> <!-- content -->
+
+    <!-- Footer Start -->
+    <footer class="footer" style="background-color:#43267D; color:white;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> &copy; Copyright LunaticaStore
+                </div>
+                <div class="col-md-6">
+                    <div class="text-md-end footer-links d-none d-sm-block">
+                        <a href="javascript:void(0);" style="color:white;">About Us</a>
+                        <a href="javascript:void(0);" style="color:white;">Help</a>
+                        <a href="javascript:void(0);" style="color:white;">Contact Us</a>
                     </div>
                 </div>
-            </footer>
-            <!-- end Footer -->
+            </div>
         </div>
+    </footer>
+    <!-- end Footer -->
+    </div>
 
 
-        <!-- ============================================================== -->
-        <!-- End Page content -->
-        <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
 
 
     </div>
     <!-- END wrapper -->
-    <a href="https://ig.me/rexonmarket.id/" class="btn-insta-float shadow-sm" target="_blank">
+    <a href="https://www.instagram.com/lunaticastore.id/" class="btn-insta-float shadow-sm" target="_blank">
         <i class="fab fa-instagram" style="margin-top: 9px;"></i>
     </a>
-    <a href="https://wa.me/6285155299353" class="btn-call-float shadow-sm" target="_blank">
+    <a href="https://wa.me/6281282186998" class="btn-call-float shadow-sm" target="_blank">
         <i class="fab fa-whatsapp" style="margin-top: 9px;"></i>
     </a>
     <a href="#" id="btn-gotop" onclick="topFunction()" style="display: block;">
