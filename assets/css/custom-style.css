@@ -79,8 +79,15 @@ p {
 
 /* === TOP FOOTER : START === */
 #top-footer {
+    position: relative;
     background-color: #43267D;
     color: #fff;
+    margin: 55px 0px 50px 0px;
+    z-index: 10;
+}
+
+.footer {
+    border-color: transparent;
 }
 /* === TOP FOOTER : END === */
 
