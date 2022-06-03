@@ -1,25 +1,25 @@
 /* === NAVIGATION BAR : START === */
-.nav-pills {
+#TabNavMenu {
     background-color: #43267D;
     color: #ffffff;
     border-color: transparent;
     border-radius: 0;
 }
 
-.nav-pills .nav-link {
+#TabNavMenu .nav-link {
     color: #ffffff;
     font-size: 12px ;
 }
 
-.nav-pills .nav-link.active {
+#TabNavMenu .nav-link.active {
     background-color: #ffffff;
     color: #43267D;
-    /* border-bottom: 3px solid #ffffff; */
     width: 100%;
     border-radius: 100px;
 }
 /* === NAVIGATION BAR : END === */
 
+/* === LIST PRODUCT : START === */
 #list-product-wrapper .card {
     position: relative;
     height: 100%;
@@ -67,16 +67,25 @@ p {
     font-size: 12px;
     width: 100%;
     border-radius: 100px;
+    transition: 0.2s ease-out;
 }
 
+#list-product-wrapper .buttonSelect:hover {
+    filter: brightness(85%);
+    transition: 0.2s ease-in;
+}
+/* === LIST PRODUCT : END === */
 
-/* === RESPONSIVE BREAKPOINT === */
+/* === RESPONSIVE CSS === */
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .nav-pills .nav-link {
+    /* --- NAVIGATION BAR : START */
+    #TabNavMenu .nav-pills .nav-link {
         font-size: 14px;
     }
+    /* --- NAVIGATION END : START */
     
+    /* --- LIST PRODUCT : START --- */
     #list-product-wrapper .card {
         height: 100%;
     }
@@ -89,6 +98,7 @@ p {
     #list-product-wrapper .buttonSelect {
         font-size: 14px;
     }
+    /* --- LIST PRODUCT : END --- */
 }
 
 /* // Large devices (desktops, 992px and up) */
