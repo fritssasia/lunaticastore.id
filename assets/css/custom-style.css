@@ -9,6 +9,7 @@
 #TabNavMenu .nav-link {
     color: #ffffff;
     font-size: 12px;
+    border-radius: 100px;
 }
 
 #TabNavMenu .nav-link.active {
@@ -75,6 +76,13 @@ p {
     transition: 0.2s ease-in;
 }
 /* === LIST PRODUCT : END === */
+
+/* === TOP FOOTER : START === */
+#top-footer {
+    background-color: #43267D;
+    color: #fff;
+}
+/* === TOP FOOTER : END === */
 
 /* === RESPONSIVE CSS === */
 /* // Medium devices (tablets, 768px and up) */
