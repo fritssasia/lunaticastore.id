@@ -97,6 +97,20 @@ p {
 }
 /* === TOP FOOTER : END === */
 
+
+/* === PAGE PEMBAYARAN : START === */
+#pilih-nominal .btn {
+    background-color: #ffffff;
+    border: 1px solid #e4e4e4 !important;
+}
+
+#pilih-nominal .btn:hover {
+    background-color: rgb(67, 38, 125, 0.5) !important;
+    border: 1px solid #43267D !important;
+    color: #ffffff !important;
+}
+/* === PAGE PEMBAYARAN : END === */
+
 /* === RESPONSIVE CSS === */
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
