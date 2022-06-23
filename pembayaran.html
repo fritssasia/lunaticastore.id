@@ -526,7 +526,7 @@ Thanks for not changing the copyright
                                             <div class="card-header pt-0" id="headingOne">
                                                 <h2 class="mb-0">
                                                     <button class="w-100 btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        data-target="#collapseBankTransfer" aria-expanded="true" aria-controls="collapseBankTransfer">
                                                         <div class="d-flex justify-content-between">
                                                             <p class="metode-pembayaran">
                                                                 <span class="pl-1">
@@ -541,7 +541,7 @@ Thanks for not changing the copyright
                                                 </h2>
                                             </div>
                                     
-                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTipePembayaran">
+                                            <div id="collapseBankTransfer" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTipePembayaran">
                                                 <div class="card-body">
                                                     <input type="radio" class="btn-check" name="pembayaran" id="bca" autocomplete="off" value="bca">
                                                     <label class="btn btn-secondary d-block mt-2 text-start but" for="bca">
@@ -559,7 +559,7 @@ Thanks for not changing the copyright
                                             <div class="card-header pt-0" id="headingTwo">
                                                 <h2 class="mb-0">
                                                     <button class="w-100 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        data-target="#collapseEWallet" aria-expanded="false" aria-controls="collapseEWallet">
                                                         <div class="d-flex justify-content-between">
                                                             <p class="metode-pembayaran">
                                                                 <span class="pl-1">
@@ -576,7 +576,7 @@ Thanks for not changing the copyright
                                                     </button>
                                                 </h2>
                                             </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTipePembayaran">
+                                            <div id="collapseEWallet" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTipePembayaran">
                                                 <div class="card-body">
                                                     <div class="d-flex row-cols-3 flex-row gx-5">
                                                         <div class="col">
@@ -619,7 +619,7 @@ Thanks for not changing the copyright
                                             <div class="card-header pt-0" id="headingThree">
                                                 <h2 class="mb-0">
                                                     <button class="w-100 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        data-target="#collapseConvenienceStore" aria-expanded="false" aria-controls="collapseConvenienceStore">
                                                         <div class="d-flex justify-content-between">
                                                             <p class="metode-pembayaran">
                                                                 <span class="pl-1">
@@ -635,7 +635,7 @@ Thanks for not changing the copyright
                                                     </button>
                                                 </h2>
                                             </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTipePembayaran">
+                                            <div id="collapseConvenienceStore" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTipePembayaran">
                                                 <div class="card-body">
                                                     <input type="radio" class="btn-check" name="pembayaran" id="alfamart" autocomplete="off" value="ALFAMART">
                                                     <label class="btn btn-secondary d-block mt-2 text-start but" for="alfamart">
@@ -650,6 +650,65 @@ Thanks for not changing the copyright
                                                             src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">
                                                         <p class="float-end d-inline-block">
                                                             <span class="badge bg-primary" id="INDOMARET"></span>
+                                                        </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- VIRTUAL ACCOUNT -->
+                                        <div class="card">
+                                            <div class="card-header pt-0" id="headingThree">
+                                                <h2 class="mb-0">
+                                                    <button class="w-100 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                                        data-target="#collapseVirtualAccount" aria-expanded="false" aria-controls="collapseVirtualAccount">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="metode-pembayaran">
+                                                                <span class="pl-1">
+                                                                    <i class="fa-solid fa-credit-card"></i>
+                                                                </span> Virtual Account
+                                                            </p>
+                                                            <p class="harga">Rp 20.000</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-end">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png" alt="">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png" alt="">
+                                                            <img src="/assets/image/mandiri.png" alt="">
+                                                            <img src="/assets/image/permata.png" alt="">
+                                                        </div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseVirtualAccount" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTipePembayaran">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="pembayaran" id="bri" autocomplete="off" value="BRIVA">
+                                                    <label class="btn btn-secondary d-block mt-2 text-start but" for="bri">
+                                                        <img class="img-fluid " width="30%" height="2%"
+                                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png">
+                                                        <p class="float-end d-inline-block">
+                                                            <span class="badge bg-primary" id="BRI"></span>
+                                                        </p>
+                                                    </label>
+                                                    <input type="radio" class="btn-check" name="pembayaran" id="bni" autocomplete="off" value="BNIVA">
+                                                    <label class="btn btn-secondary d-block mt-2 text-start but" for="bni">
+                                                        <img class="img-fluid " width="30%" height="2%"
+                                                            src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png">
+                                                        <p class="float-end d-inline-block">
+                                                            <span class="badge bg-primary" id="BNI"></span>
+                                                        </p>
+                                                    </label>
+                                                    <input type="radio" class="btn-check" name="pembayaran" id="mandiri" autocomplete="off" value="MANDIRIVA">
+                                                    <label class="btn btn-secondary d-block mt-2 text-start but" for="mandiri">
+                                                        <img class="img-fluid " width="30%" height="2%" src="/assets/image/mandiri.png">
+                                                        <p class="float-end d-inline-block">
+                                                            <span class="badge bg-primary" id="MANDIRI"></span>
+                                                        </p>
+                                                    </label>
+                                                    <input type="radio" class="btn-check" name="pembayaran" id="permata" autocomplete="off" value="PERMATAVA">
+                                                    <label class="btn btn-secondary d-block mt-2 text-start but" for="permata">
+                                                        <img class="img-fluid " width="30%" height="2%" src="/assets/image/permata.png">
+                                                        <p class="float-end d-inline-block">
+                                                            <span class="badge bg-primary" id="PERMATA"></span>
                                                         </p>
                                                     </label>
                                                 </div>
