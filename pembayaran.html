@@ -120,7 +120,6 @@ Thanks for not changing the copyright
 
         .btn-check:checked+.btn {
             border: 1px solid #43267D !important;
-            width: 100%;
         }
 
         .swal-title {
@@ -578,7 +577,7 @@ Thanks for not changing the copyright
                                             </div>
                                             <div id="collapseEWallet" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTipePembayaran">
                                                 <div class="card-body">
-                                                    <div class="d-flex row-cols-3 flex-row gx-5">
+                                                    <div class="d-flex row-cols-3 flex-row">
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="qris" autocomplete="off" value="QRISC">
                                                             <label class="btn btn-secondary d-block mt-2 mx-1 text-start but" for="qris">
@@ -637,21 +636,28 @@ Thanks for not changing the copyright
                                             </div>
                                             <div id="collapseConvenienceStore" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTipePembayaran">
                                                 <div class="card-body">
-                                                    <input type="radio" class="btn-check" name="pembayaran" id="alfamart" autocomplete="off" value="ALFAMART">
-                                                    <label class="btn btn-secondary d-block mt-2 text-start but" for="alfamart">
-                                                        <img class="img-fluid " width="30%" height="2%" src="/assets/image/alfamart.png">
-                                                        <p class="float-end d-inline-block">
-                                                            <span class="badge bg-primary" id="ALFAMART"></span>
-                                                        </p>
-                                                    </label>
-                                                    <input type="radio" class="btn-check" name="pembayaran" id="indomaret" autocomplete="off" value="INDOMARET">
-                                                    <label class="btn btn-secondary d-block mt-2 text-start but" for="indomaret">
-                                                        <img class="img-fluid " width="30%" height="2%"
-                                                            src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">
-                                                        <p class="float-end d-inline-block">
-                                                            <span class="badge bg-primary" id="INDOMARET"></span>
-                                                        </p>
-                                                    </label>
+                                                    <div class="d-flex row-cols-2 flex-row">
+                                                        <div class="col">
+                                                            <input type="radio" class="btn-check" name="pembayaran" id="alfamart" autocomplete="off" value="ALFAMART">
+                                                            <label class="btn btn-secondary d-block mt-2 mx-1 text-start but" for="alfamart">
+                                                                <img class="img-fluid " width="30%" height="2%" src="/assets/image/alfamart.png">
+                                                                <p class="float-end d-inline-block">
+                                                                    <span class="badge bg-primary" id="ALFAMART"></span>
+                                                                </p>
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="col">
+                                                            <input type="radio" class="btn-check" name="pembayaran" id="indomaret" autocomplete="off" value="INDOMARET">
+                                                            <label class="btn btn-secondary d-block mt-2 mx-1 text-start but" for="indomaret">
+                                                                <img class="img-fluid " width="30%" height="2%"
+                                                                    src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">
+                                                                <p class="float-end d-inline-block">
+                                                                    <span class="badge bg-primary" id="INDOMARET"></span>
+                                                                </p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
