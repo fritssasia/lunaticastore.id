@@ -2,6 +2,10 @@ body {
     background-color: white;
 }
 
+.text-left {
+    text-align: left !important;
+}
+
 /* === NAVIGATION BAR : START === */
 #TabNavMenu {
     background-color: #43267D;
@@ -111,6 +115,12 @@ p {
     background-color: rgb(67, 38, 125, 0.5) !important;
     border: 1px solid #43267D !important;
     color: #ffffff !important;
+}
+
+#accordionTipePembayaran .card-header img {
+    width: 50px;
+    object-fit: contain;
+    margin: 0px 5px;
 }
 /* === PAGE PEMBAYARAN : END === */
 
