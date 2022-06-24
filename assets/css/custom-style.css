@@ -25,6 +25,11 @@ body {
     padding-bottom: 7px;
 }
 
+#TabNavMenu .nav-link {
+    border-bottom: 5px solid transparent;
+    border-radius: 0;
+}
+
 #TabNavMenu .nav-link.active {
     background-color: transparent;
     color: #ffffff;
@@ -45,13 +50,12 @@ body {
 }
 
 #list-product-wrapper .card .card-img-top {
-    width: 60%;
+    width: 70%;
     max-height: 172px;
     border-radius: 12px;
     display: block;
     margin: 0 auto;
-    margin-top: -25px;
-    border: 2px solid #43267D;
+    margin-top: -50px;
 }
 
 #list-product-wrapper .card-body {
@@ -97,6 +101,13 @@ p {
     color: #fff;
     margin: 55px 0px 50px 0px;
     z-index: 10;
+}
+
+#top-footer .list-pembayaran img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0px 10px;
 }
 
 .footer {
@@ -153,8 +164,9 @@ p {
 @media (min-width: 992px) {
     /* --- LIST PRODUCT : START --- */
     #list-product-wrapper .card .card-img-top {
-        width: 50%;
-        margin-top: -60px;
+        width: 65%;
+        object-fit: contain;
+        margin-top: -75px;
     }
     /* --- LIST PRODUCT : END --- */
 }
