@@ -109,6 +109,10 @@ p {
     z-index: 10;
 }
 
+#top-footer .black-strip {
+    background-color: #ffffff;
+}
+
 #top-footer .list-pembayaran img {
     width: 100px;
     height: 100px;
