@@ -1,5 +1,5 @@
 body {
-    background-color: #2d3238;
+    background-color: #e5e5e5;
 }
 
 .text-left {
@@ -8,14 +8,14 @@ body {
 
 /* === NAVIGATION BAR : START === */
 #TabNavMenu {
-    background-color: #43267D;
-    color: #ffffff;
+    background-color: #fff;
+    color: #000000;
     border-color: transparent;
     border-radius: 0;
 }
 
 #TabNavMenu .nav-link {
-    color: #ffffff;
+    color: black;
     font-size: 12px;
     border-radius: 100px;
 }
@@ -32,16 +32,16 @@ body {
 
 #TabNavMenu .nav-link.active {
     background-color: transparent;
-    color: #ffffff;
+    color: #5e21d8;
     width: 100%;
     border-radius: 0px;
-    border-bottom: 5px solid #ffffff;
+    border-bottom: 5px solid #5e21d8;
 }
 /* === NAVIGATION BAR : END === */
 
 /* === LIST PRODUCT : START === */
 #list-product-wrapper .card {
-    background-color: #212529;
+    background-color: #ffffff;
     position: relative;
     height: 100%;
     border-radius: 16px;
@@ -52,7 +52,7 @@ body {
 }
 
 #list-product-wrapper .card-title, .card-text {
-    color: white !important;
+    color: #000000 !important;
 }
 
 #list-product-wrapper .card .card-img-top {
@@ -86,8 +86,8 @@ p {
 }
 
 #list-product-wrapper .buttonSelect {
-    background-color: #43267D;
-    border-color: #43267D;
+    background-color: #5e21d8;
+    border-color: #5e21d8;
     font-size: 12px;
     width: 100%;
     border-radius: 100px;
@@ -103,7 +103,7 @@ p {
 /* === TOP FOOTER : START === */
 #top-footer {
     position: relative;
-    background-color: #43267D;
+    background-color: #5e21d8;
     color: #fff;
     margin: 55px 0px 50px 0px;
     z-index: 10;
@@ -128,7 +128,7 @@ p {
 }
 
 #lengkapi-data input:focus {
-    border-color: #43267D;
+    border-color: #5e21d8;
 }
 
 #pilih-nominal .btn {
@@ -138,7 +138,7 @@ p {
 
 #pilih-nominal .btn:hover {
     background-color: rgb(67, 38, 125, 0.5) !important;
-    border: 1px solid #43267D !important;
+    border: 1px solid #5e21d8 !important;
     color: #ffffff !important;
 }
 
