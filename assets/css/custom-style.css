@@ -121,6 +121,11 @@ p {
     margin: 0px 10px;
 }
 
+#top-footer .footer-links a {
+    color: #ffffff;
+    padding: 2px 0px;
+}
+
 .footer {
     background-color: #5e21d8;
     color: #ffffff;
