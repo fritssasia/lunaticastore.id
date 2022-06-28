@@ -137,6 +137,10 @@ p {
 
 
 /* === PAGE PEMBAYARAN : START === */
+#page-pembayaran .border-primary {
+    border-color: transparent !important;
+}
+
 #lengkapi-data input {
     border: 1px solid #9e9e9e;
 }
