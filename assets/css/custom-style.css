@@ -7,6 +7,11 @@ body {
 }
 
 /* === NAVIGATION BAR : START === */
+#topnav-menu-content .btn-primary {
+    color: #ffffff;
+    margin-left: 18px;
+}
+
 #TabNavMenu {
     background-color: #fff;
     color: #000000;
@@ -46,9 +51,6 @@ body {
     height: 100%;
     border-radius: 16px;
     border: 0;
-    /* border: 0; */
-    /* box-shadow:
-    5px 5px 58px rgba(0, 0, 0, 0.12); */
 }
 
 #list-product-wrapper .card-title, .card-text {
@@ -193,6 +195,10 @@ p {
         width: 65%;
         object-fit: contain;
         margin-top: -75px;
+    }
+
+    #list-product-wrapper .gy-5 {
+        --bs-gutter-y: 6.5rem;
     }
     /* --- LIST PRODUCT : END --- */
 }
