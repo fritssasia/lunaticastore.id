@@ -35,11 +35,14 @@ Thanks for not changing the copyright
     <script src="https://kit.fontawesome.com/99f8e55a96.js" crossorigin="anonymous"></script>
     <!-- third party css -->
     <link href="/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- third party css end -->
 
     <style>
@@ -243,9 +246,12 @@ Thanks for not changing the copyright
         }
     </style>
 
+    <link rel="stylesheet" href="/assets/css/custom-style.css">
+
 </head>
 
-<body class="loading" data-layout-mode="horizontal" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
+<body class="loading" data-layout-mode="horizontal"
+    data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
 
     <!-- Begin page -->
     <div id="wrapper">
@@ -258,10 +264,10 @@ Thanks for not changing the copyright
                 <div class="logo-box">
                     <a href="https://lunaticastore.id" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="/assets/images/lunatica_banner.png" alt="" height="35">
+                            <img src="/lunatica-logo/lunatica_banner.png" alt="" height="35">
                         </span>
                         <span class="logo-lg">
-                            <img src="/assets/images/lunatica_banner.png" alt="" height="65">
+                            <img src="/lunatica-logo/lunatica_banner.png" alt="" height="65">
                             <!--<span class="logo-lg-text-dark">LunaticaStore</span>-->
                         </span>
                     </a>
@@ -285,7 +291,8 @@ Thanks for not changing the copyright
 
                     <li>
                         <!-- Mobile menu toggle (Horizontal Layout)-->
-                        <a class="navbar-toggle nav-link" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                        <a class="navbar-toggle nav-link" data-bs-toggle="collapse"
+                            data-bs-target="#topnav-menu-content">
                             <div class="lines">
                                 <span></span>
                                 <span></span>
@@ -294,6 +301,14 @@ Thanks for not changing the copyright
                         </a>
                         <!-- End mobile menu toggle-->
                     </li>
+
+                    <ul class="navbar-nav d-none d-lg-block">
+                        <li class="nav-item">
+                            <a class="btn btn-primary px-3 py-2 mt-2" href="">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i><span class="ml-3"></span> Masuk
+                            </a>
+                        </li>
+                    </ul>
                 </ul>
 
                 <div class="clearfix"></div>
@@ -319,16 +334,9 @@ Thanks for not changing the copyright
                                     <span> Cari Pesanan </span>
                                 </a>
                             </li>
-                                                        <li class="nav-item dropdown">
-                                <a href="https://lunaticastore.id/login" class="nav-link dropdown-toggle arrow-none">
-                                    <i class="fa fa-sign-in"></i>
-                                    <span> Masuk </span>
-                                </a>
-                            </li>
-                                                                                    <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="https://wa.me/+62821-1545-6404">
-                                    <i class="fa fa-phone"></i>
-                                    <span> Hubungi Kami </span>
+                            <li class="nav-item d-block d-lg-none pb-3">
+                                <a class="btn btn-primary px-3 py-2 mt-2 ml-5" href="">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i><span class="ml-3"></span> Masuk
                                 </a>
                             </li>
                         </ul> <!-- end navbar-->
@@ -345,53 +353,100 @@ Thanks for not changing the copyright
             <div class="content">
                 <!-- Start Content-->
                 <div class="container-fluid">
-                                        <div class="row mt-4">
-    <div class="col-12">
-        <div class="card mt-2">
-            <div class="card-body">
-                <h4 class="page-title">Cari Pesanan</h4>
-                <form class="form-horizontal mt-4" action="https://lunaticastore.id/cari" method="POST">
-                    <input type="hidden" name="_token" value="dawYjX7cHnMrYyQGRFEPcm4x2WX9uI6ZqsrHrYU4">                    <div class="row">
-                        <div class="col">
-                            <div class="mb-3 row">
-                                <label class="col-lg-2 col-form-label" for="simpleinput">ID Pesanan</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control " value="" name="id" value="">
-                                                                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <h4 class="page-title">Cari Pesanan</h4>
+                                    <form class="form-horizontal mt-4" action="https://lunaticastore.id/cari"
+                                        method="POST">
+                                        <input type="hidden" name="_token"
+                                            value="dawYjX7cHnMrYyQGRFEPcm4x2WX9uI6ZqsrHrYU4">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="mb-3 row">
+                                                    <label class="col-lg-2 col-form-label" for="simpleinput">ID
+                                                        Pesanan</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control " value="" name="id"
+                                                            value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-info">Cari</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-info">Cari</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
                 </div> <!-- container -->
 
             </div> <!-- content -->
 
-                        <!-- Footer Start -->
-            <footer class="footer" style="background-color:white;">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script> &copy; Copyright LunaticaStore
+            
+        </div>
+
+        <section id="top-footer">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 gx-4 about text-center text-md-start py-3">
+                    <div class="col">
+                        <h3 class="uppercase text-white">LunaticaStore</h3>
+                        <span class="black-strip mx-auto"></span>
+                        <div class="mt-4">
+                            <span class="fw-light">LunaticaStore Penyedia Layanan Top-Up Game Favorite-mu Tanpa
+                                Ribet,
+                                Nikmati Pengalaman Top-Up Yang Menyenangkan Bersama Kami. Kami Menyediakan
+                                Berbagai Metode Pembayaran Yang Mudah Dan Menawarkan Banyak Judul Game.</span>
                         </div>
-                        <div class="col-md-6">
-                            <div class="text-md-end footer-links d-none d-sm-block">
-                                <a href="javascript:void(0);">About Us</a>
-                                <a href="javascript:void(0);">Help</a>
-                                <a href="javascript:void(0);">Contact Us</a>
-                            </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="uppercase text-white">Peta Situs</h3>
+                        <span class="black-strip"></span>
+                        <div class="footer-links d-flex flex-column pt-3">
+                            <a href="javascript:void(0);">About Us</a>
+                            <a href="javascript:void(0);">Help</a>
+                            <a href="javascript:void(0);">Contact Us</a>
+                            <a href="javascript:void(0);">Privacy & Policy</a>
+                        </div>
+                    </div>
+                    <div class="col pt-3 pt-md-0">
+                        <h3 class="uppercase text-white">Pembayaran</h3>
+                        <span class="black-strip"></span>
+                        <div class="mt-md-4">
+                            <marquee class="list-pembayaran">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Alfamart_logo.svg">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">
+                                <img src="https://hopestore.id/assets/img/bca_footer.png">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/1200px-Bank_Mandiri_logo_2016.svg.png">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png">
+                                <img src="https://lunaticastore.id/assets/permata.png">
+                                <img src="https://rexonmarket.id/assets/payment/ovo.png">
+                                <img src="https://lelogama.go-jek.com/logo/GoPay-white.text.png">
+                                <img src="https://hopestore.id/assets/img/dana_footer.png">
+                                <img src="https://hopestore.id/assets/img/shopay_footer.png">
+                                <img src="https://lunaticastore.id/assets/link.png">
+                                <img src="https://hopestore.id/assets/img/qris_footer.png">
+                            </marquee>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!-- end Footer -->
-        </div>
+            </div>
+        </section>
+        
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container-fluid text-center">
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> &copy; Copyright LunaticaStore
+            </div>
+        </footer>
+        <!-- end Footer -->
 
 
         <!-- ============================================================== -->
@@ -457,7 +512,7 @@ Thanks for not changing the copyright
         });
 
         mybutton = document.getElementById("btn-gotop");
-        window.onscroll = function() {
+        window.onscroll = function () {
             scrollFunction()
         };
 
@@ -468,7 +523,7 @@ Thanks for not changing the copyright
                 mybutton.style.display = "none";
             }
         }
-        $('#myModal').on('shown.bs.modal', function() {
+        $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
         })
 

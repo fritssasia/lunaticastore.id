@@ -28,7 +28,6 @@ Thanks for not changing the copyright
     <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" disabled />
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/assets/css/custom-style.css">
 
 
     <!-- icons -->
@@ -62,12 +61,6 @@ Thanks for not changing the copyright
 
         .topnav {
             position: absolute;
-        }
-
-        .but {
-            background-color: #fff !important;
-            color: black !important;
-            height: 100%;
         }
 
         .swiper {
@@ -111,11 +104,6 @@ Thanks for not changing the copyright
         .form-select {
             /*background-color: #222831 !important;*/
             color: black;
-        }
-
-        div input[type=radio]:checked+label {
-            background-color: #43267D !important;
-            color: #ffffff !important;
         }
 
         .btn-check:checked+.btn {
@@ -250,6 +238,8 @@ Thanks for not changing the copyright
         }
     </style>
 
+    <link rel="stylesheet" href="/assets/css/custom-style.css">
+
 </head>
 
 <body class="loading" id="page-pembayaran" data-layout-mode="horizontal"
@@ -266,14 +256,14 @@ Thanks for not changing the copyright
                 <div class="logo-box">
                     <a href="https://lunaticastore.id" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="/assets/images/lunatica_banner.png" alt="" height="35">
+                            <img src="/lunatica-logo/lunatica_banner.png" alt="" height="35">
                         </span>
                         <span class="logo-lg">
-                            <img src="/assets/images/lunatica_banner.png" alt="" height="65">
+                            <img src="/lunatica-logo/lunatica_banner.png" alt="" height="65">
                             <!--<span class="logo-lg-text-dark">LunaticaStore</span>-->
                         </span>
                     </a>
-        
+                
                     <a href="https://lunaticastore.id" class="logo logo-light">
                         <span class="logo-sm">
                             <img src="/assets/images/logo-sm.png" alt="" height="24">
@@ -383,18 +373,8 @@ Thanks for not changing the copyright
             <div class="content">
                 <!-- Start Content-->
                 <div class="container-fluid">
-                    <style>
-                        .order-button {
-                            background-color: #5e21d8;
-                        }
-
-                        .order-button:hover {
-                            color: white;
-                            background-color: #43267D;
-                        }
-                    </style>
                     <div class="row mt-5 justify-content-center">
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-lg-4">
                             <div class="card light border-primary">
                                 <div class="card-body">
                                     <img src="/assets/thumbnail/mlproduct.jpg" style="max-width:300px; max-height:200px"
@@ -422,7 +402,7 @@ Thanks for not changing the copyright
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-7">
                             <div class="card light border-primary">
                                 <div class="card-body" id="lengkapi-data">
                                     <h4 class="text-dark mb-3 mt-0 fw-bold">1. Lengkapi data</h4>
@@ -444,183 +424,123 @@ Thanks for not changing the copyright
                             <div class="card light border-primary" id="pilih-nominal">
                                 <div class="card-body">
                                     <h4 class="text-dark mb-3 mt-0 fw-bold">2. Pilih Nominal</h4>
-                                    <div class="row text-left">
+                                    <div class="row row-cols-2 row-cols-md-3 g-2 text-left">
 
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="9"
-                                                autocomplete="off" value="9">
-                                            <label class="btn text-left shadow-sm d-block fw-light but" for="9">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">14 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
+                                        <div class="col">
+                                            <input type="radio" class="btn-check nem" name="inlineRadioOptions" id="diamond-14" checked>
+                                            <label for="diamond-14" class="btn text-left d-block fw-light but list-group-item h-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col item">
+                                                                14 Diamond
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col price">
+                                                                Rp 115.000
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </label>
                                         </div>
 
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="10"
-                                                autocomplete="off" value="10">
-                                            <label class="btn text-left shadow-sm d-block fw-light but" for="10">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">42 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                        </div>
-
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="13"
-                                                autocomplete="off" value="13">
-                                            <label class="btn text-left shadow-sm d-block fw-light but" for="13">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">70 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
+                                        <div class="col">
+                                            <input type="radio" class="btn-check nem" name="inlineRadioOptions" id="diamond-500">
+                                            <label for="diamond-500" class="btn text-left d-block fw-light but list-group-item h-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col item">
+                                                                500 Diamond
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col price">
+                                                                Rp 115.000
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </label>
                                         </div>
 
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="14"
-                                                autocomplete="off" value="14">
-                                            <label class="btn text-left shadow-sm d-block fw-light but" for="14">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">140 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                        </div>
-
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="15"
-                                                autocomplete="off" value="15">
-                                            <label class="btn text-left shadow-sm d-block fw-light but" for="15">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">284 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
+                                        <div class="col">
+                                            <input type="radio" class="btn-check nem" name="inlineRadioOptions" id="diamond-700">
+                                            <label for="diamond-700" class="btn text-left d-block fw-light but list-group-item h-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col item">
+                                                                700 Diamond
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col price">
+                                                                Rp 115.000
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </label>
                                         </div>
 
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="16"
-                                                autocomplete="off" value="16">
-                                            <label class="btn text-left text-left shadow-sm d-block fw-light but" for="16">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">355 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                        </div>
-
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="17"
-                                                autocomplete="off" value="17">
-                                            <label class="btn text-left shadow-sm d-block fw-light but" for="17">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">716 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="18"
-                                                autocomplete="off" value="18">
-                                            <label class="btn text-left shadow-sm d-block fw-light but" for="18">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">1446 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
+                                        <div class="col">
+                                            <input type="radio" class="btn-check nem" name="inlineRadioOptions" id="diamond-900">
+                                            <label for="diamond-900" class="btn text-left d-block fw-light but list-group-item h-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col item">
+                                                                900 Diamond
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col price">
+                                                                Rp 115.000
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </label>
                                         </div>
 
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="19"
-                                                autocomplete="off" value="19">
-                                            <label class="btn text-left shadow-sm d-block fw-light but" for="19">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">2976 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
+                                        <div class="col">
+                                            <input type="radio" class="btn-check nem" name="inlineRadioOptions" id="diamond-1000">
+                                            <label for="diamond-1000" class="btn text-left d-block fw-light but list-group-item h-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col item">
+                                                                1000 Diamond
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col price">
+                                                                Rp 115.000
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </label>
                                         </div>
 
-                                        <div class="col-md-4 col-6 mt-2">
-                                            <input type="radio" class="btn-check nem" name="nominal" id="20"
-                                                autocomplete="off" value="20">
-                                            <label class="btn text-left shadow-sm d-block fw-light but" for="20">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <p class="item mb-0">7502 Diamond</p>
-                                                        <p class="price mb-0">Rp 5000</p>
-                                                    </div>
-                                                    <div>
-                                                        <span class="icon">
-                                                            <i class="fa-solid fa-gem"></i>
-                                                        </span>
+                                        <div class="col">
+                                            <input type="radio" class="btn-check nem" name="inlineRadioOptions" id="diamond-2000">
+                                            <label for="diamond-2000" class="btn text-left d-block fw-light but list-group-item h-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col item">
+                                                                2000 Diamond
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col price">
+                                                                Rp 115.000
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </label>
@@ -637,212 +557,396 @@ Thanks for not changing the copyright
 
                                         <!-- BANK TRANSFER -->
                                         <div class="card">
-                                            <div class="card-header pt-0" id="headingOne">
-                                                <h2 class="mb-0">
+                                            <div class="card-header py-0 px-2" id="headingOne">
+                                                <h2 class="my-0">
                                                     <button class="w-100 btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                                                         data-target="#collapseBankTransfer" aria-expanded="true" aria-controls="collapseBankTransfer">
                                                         <div class="d-flex justify-content-between">
-                                                            <p class="metode-pembayaran">
+                                                            <p class="metode-pembayaran mb-0">
                                                                 <span class="pl-1">
                                                                     <i class="fa-solid fa-building-columns"></i>
                                                                 </span> Bank Transfer</p>
-                                                            <p class="harga">Rp 20.000</p>
-                                                        </div>
-                                                        <div class="d-flex justify-content-end">
-                                                            <img src="https://hopestore.id/assets/img/bca_footer.png" alt="">
+                                                            <p class="harga mb-0">Rp 20.000</p>
                                                         </div>
                                                     </button>
                                                 </h2>
                                             </div>
                                     
                                             <div id="collapseBankTransfer" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTipePembayaran">
-                                                <div class="card-body">
-                                                    <input type="radio" class="btn-check" name="pembayaran" id="bca" autocomplete="off" value="bca">
-                                                    <label class="btn btn-secondary d-flex align-items-center justify-content-center mt-2 text-start but" for="bca">
-                                                        <img class="img-fluid" src="https://hopestore.id/assets/img/bca_footer.png">
-                                                        <p class="float-end d-inline-block">
-                                                            <span class="badge bg-primary" id="BCA"></span>
-                                                        </p>
-                                                    </label>
+                                                <div class="card-body p-2">
+                                                    <div class="row row-cols-1 row-cols-md-2">
+                                                        <div class="col">
+                                                            <input type="radio" class="btn-check" name="pembayaran" id="bca" autocomplete="off" value="bca">
+                                                            <label class="btn btn-secondary text-start but w-100" for="bca">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="https://hopestore.id/assets/img/bca_footer.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">BCA</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                            </div>
+
+                                            <div class="card-footer py-0 px-1">
+                                                <h2 class="my-0">
+                                                    <button class="w-100 btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                                        data-target="#collapseBankTransfer" aria-expanded="true" aria-controls="collapseBankTransfer">
+                                                        <div class="d-flex justify-content-end py-1">
+                                                            <img src="https://hopestore.id/assets/img/bca_footer.png" alt="" class="payment-method">
+                                                        </div>
+                                                    </button>
+                                                </h2>
                                             </div>
                                         </div>
 
                                         <!-- E-WALLET -->
                                         <div class="card">
-                                            <div class="card-header pt-0" id="headingTwo">
-                                                <h2 class="mb-0">
+                                            <div class="card-header py-0 px-2" id="headingTwo">
+                                                <h2 class="my-0">
                                                     <button class="w-100 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                                                         data-target="#collapseEWallet" aria-expanded="false" aria-controls="collapseEWallet">
                                                         <div class="d-flex justify-content-between">
-                                                            <p class="metode-pembayaran">
+                                                            <p class="metode-pembayaran mb-0">
                                                                 <span class="pl-1">
                                                                     <i class="fa-solid fa-wallet"></i>
                                                                 </span> E-Wallet
                                                             </p>
-                                                            <p class="harga">Rp 20.000</p>
-                                                        </div>
-                                                        <div class="d-flex justify-content-end">
-                                                            <img src="/assets/image/qris.png" alt="">
-                                                            <img src="/assets/image/ovo.jpg" alt="">
-                                                            <img src="https://1.bp.blogspot.com/-HWNpI1A87vw/XJNq8llVlnI/AAAAAAAAAa8/5PpRCSJVjQQCLrVW4DMYobzCQRlzFj2BQCLcBGAs/s1600/Logo%2BGoPay%2BVector%2BCDR%2Bdan%2BPNG.png" alt="">
+                                                            <p class="harga mb-0">Rp 20.000</p>
                                                         </div>
                                                     </button>
                                                 </h2>
                                             </div>
                                             <div id="collapseEWallet" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTipePembayaran">
-                                                <div class="card-body">
-                                                    <div class="d-flex row-cols-3 flex-row">
+                                                <div class="card-body p-2">
+                                                    <div class="row row-cols-1 row-cols-md-2 g-2">
+                                                        
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="qris" autocomplete="off" value="QRISC">
-                                                            <label class="btn btn-secondary d-flex align-items-center justify-content-center mt-2 mx-1 text-start but" for="qris">
-                                                                <img class="img-fluid" src="/assets/image/qris.png">
-                                                                <p class="float-end d-inline-block">
-                                                                    <span class="badge bg-primary" id="QRIS"></span>
-                                                                </p>
+                                                            <label class="btn btn-secondary text-start but w-100" for="qris">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="/assets/image/qris.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">QRIS</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
                                                             </label>
                                                         </div>
                                                     
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="ovo" autocomplete="off" value="ovo">
-                                                            <label class="btn btn-secondary d-flex align-items-center justify-content-center mt-2 mx-1 text-start but" for="ovo">
-                                                                <img class="img-fluid" src="/assets/image/ovo.jpg">
-                                                                <p class="float-end d-inline-block">
-                                                                    <span class="badge bg-primary" id="OVO"></span>
-                                                                </p>
+                                                            <label class="btn btn-secondary text-start but w-100" for="ovo">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="/assets/image/ovo.jpg">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">OVO</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
                                                             </label>
                                                         </div>
                                                     
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="gopay" autocomplete="off" value="gopay">
-                                                            <label class="btn btn-secondary d-flex align-items-center justify-content-center mt-2 mx-1 text-start but" for="gopay">
-                                                                <img class="img-fluid" src="https://1.bp.blogspot.com/-HWNpI1A87vw/XJNq8llVlnI/AAAAAAAAAa8/5PpRCSJVjQQCLrVW4DMYobzCQRlzFj2BQCLcBGAs/s1600/Logo%2BGoPay%2BVector%2BCDR%2Bdan%2BPNG.png">
-                                                                <p class="float-end d-inline-block">
-                                                                    <span class="badge bg-primary" id="GOPAY"></span>
-                                                                </p>
+                                                            <label class="btn btn-secondary text-start but w-100" for="gopay">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="https://1.bp.blogspot.com/-HWNpI1A87vw/XJNq8llVlnI/AAAAAAAAAa8/5PpRCSJVjQQCLrVW4DMYobzCQRlzFj2BQCLcBGAs/s1600/Logo%2BGoPay%2BVector%2BCDR%2Bdan%2BPNG.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">GoPay</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
                                                             </label>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+
+                                            <div class="card-footer py-0 px-1">
+                                                <h2 class="my-0">
+                                                    <button class="w-100 btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                                        data-target="#collapseEWallet" aria-expanded="true" aria-controls="collapseEWallet">
+                                                        <div class="d-flex justify-content-end py-1">
+                                                            <img src="/assets/image/qris.png" alt="" class="payment-method">
+                                                            <img src="/assets/image/ovo.jpg" alt="" class="payment-method">
+                                                            <img src="https://1.bp.blogspot.com/-HWNpI1A87vw/XJNq8llVlnI/AAAAAAAAAa8/5PpRCSJVjQQCLrVW4DMYobzCQRlzFj2BQCLcBGAs/s1600/Logo%2BGoPay%2BVector%2BCDR%2Bdan%2BPNG.png"
+                                                            alt="" class="payment-method">
+                                                            </div>
+                                                    </button>
+                                                </h2>
                                             </div>
                                         </div>
 
                                         <!-- CONVENIENCE STORE -->
                                         <div class="card">
-                                            <div class="card-header pt-0" id="headingThree">
-                                                <h2 class="mb-0">
+                                            <div class="card-header py-0 px-2" id="headingThree">
+                                                <h2 class="my-0">
                                                     <button class="w-100 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                                                         data-target="#collapseConvenienceStore" aria-expanded="false" aria-controls="collapseConvenienceStore">
                                                         <div class="d-flex justify-content-between">
-                                                            <p class="metode-pembayaran">
+                                                            <p class="metode-pembayaran mb-0">
                                                                 <span class="pl-1">
                                                                     <i class="fa-solid fa-store"></i>
                                                                 </span> Convenience Store
                                                             </p>
-                                                            <p class="harga">Rp 20.000</p>
-                                                        </div>
-                                                        <div class="d-flex justify-content-end">
-                                                            <img src="/assets/image/alfamart.png" alt="">
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png" alt="">
+                                                            <p class="harga mb-0">Rp 20.000</p>
                                                         </div>
                                                     </button>
                                                 </h2>
                                             </div>
                                             <div id="collapseConvenienceStore" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTipePembayaran">
-                                                <div class="card-body">
-                                                    <div class="d-flex row-cols-2 flex-row">
+                                                <div class="card-body p-2">
+                                                    <div class="row row-cols-1 row-cols-md-2 g-2">
+
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="alfamart" autocomplete="off" value="ALFAMART">
-                                                            <label class="btn btn-secondary  d-flex align-items-center justify-content-center mt-2 mx-1 text-start but" for="alfamart">
-                                                                <img class="img-fluid" src="/assets/image/alfamart.png">
-                                                                <p class="float-end d-inline-block">
-                                                                    <span class="badge bg-primary" id="ALFAMART"></span>
-                                                                </p>
+                                                            <label class="btn btn-secondary text-start but w-100" for="alfamart">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="/assets/image/alfamart.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">Alfamart</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
                                                             </label>
                                                         </div>
 
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="indomaret" autocomplete="off" value="INDOMARET">
-                                                            <label class="btn btn-secondary d-flex align-items-center justify-content-center mt-2 mx-1 text-start but" for="indomaret">
-                                                                <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">
-                                                                <p class="float-end d-inline-block">
-                                                                    <span class="badge bg-primary" id="INDOMARET"></span>
-                                                                </p>
+                                                            <label class="btn btn-secondary text-start but w-100" for="indomaret">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">Indomaret</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
                                                             </label>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="card-footer py-0 px-1">
+                                                <h2 class="my-0">
+                                                    <button class="w-100 btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                                        data-target="#collapseConvenienceStore" aria-expanded="true" aria-controls="collapseConvenienceStore">
+                                                        <div class="d-flex justify-content-end py-1">
+                                                            <img src="/assets/image/alfamart.png" alt="" class="payment-method">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png" alt=""  class="payment-method">
+                                                        </div>
+                                                    </button>
+                                                </h2>
                                             </div>
                                         </div>
 
                                         <!-- VIRTUAL ACCOUNT -->
                                         <div class="card">
-                                            <div class="card-header pt-0" id="headingThree">
-                                                <h2 class="mb-0">
+                                            <div class="card-header py-0 px-2" id="headingThree">
+                                                <h2 class="my-0">
                                                     <button class="w-100 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                                                         data-target="#collapseVirtualAccount" aria-expanded="false" aria-controls="collapseVirtualAccount">
                                                         <div class="d-flex justify-content-between">
-                                                            <p class="metode-pembayaran">
+                                                            <p class="metode-pembayaran mb-0">
                                                                 <span class="pl-1">
                                                                     <i class="fa-solid fa-credit-card"></i>
                                                                 </span> Virtual Account
                                                             </p>
-                                                            <p class="harga">Rp 20.000</p>
-                                                        </div>
-                                                        <div class="d-flex justify-content-end">
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png" alt="">
-                                                            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png" alt="">
-                                                            <img src="/assets/image/mandiri.png" alt="">
-                                                            <img src="/assets/image/permata.png" alt="">
+                                                            <p class="harga mb-0">Rp 20.000</p>
                                                         </div>
                                                     </button>
                                                 </h2>
                                             </div>
                                             <div id="collapseVirtualAccount" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTipePembayaran">
-                                                <div class="card-body">
-                                                    <div class="row row-cols-2 gy-2">
+                                                <div class="card-body p-2">
+                                                    <div class="row row-cols-1 row-cols-md-2 g-2">
+
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="bri" autocomplete="off" value="BRIVA">
-                                                            <label class="btn btn-secondary d-flex align-items-center justify-content-center mt-2 text-start but" for="bri">
-                                                                <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png">
-                                                                <p class="float-end d-inline-block">
-                                                                    <span class="badge bg-primary" id="BRI"></span>
-                                                                </p>
+                                                            <label class="btn btn-secondary text-start but w-100" for="bri">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">BRI Virtual Account</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
                                                             </label>
                                                         </div>
 
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="bni" autocomplete="off" value="BNIVA">
-                                                            <label class="btn btn-secondary d-flex align-items-center justify-content-center mt-2 text-start but" for="bni">
-                                                                <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png">
-                                                                <p class="float-end d-inline-block">
-                                                                    <span class="badge bg-primary" id="BNI"></span>
-                                                                </p>
+                                                            <label class="btn btn-secondary text-start but w-100" for="bni">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">BNI Virtual Account</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
                                                             </label>
                                                         </div>
 
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="mandiri" autocomplete="off" value="MANDIRIVA">
-                                                            <label class="btn btn-secondary d-flex align-items-center justify-content-center mt-2 text-start but" for="mandiri">
-                                                                <img class="img-fluid" src="/assets/image/mandiri.png">
-                                                                <p class="float-end d-inline-block">
-                                                                    <span class="badge bg-primary" id="MANDIRI"></span>
-                                                                </p>
+                                                            <label class="btn btn-secondary text-start but w-100" for="mandiri">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="/assets/image/mandiri.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">Mandiri Virtual Account</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
                                                             </label>
                                                         </div>
 
                                                         <div class="col">
                                                             <input type="radio" class="btn-check" name="pembayaran" id="permata" autocomplete="off" value="PERMATAVA">
-                                                            <label class="btn btn-secondary d-flex align-items-center justify-content-center mt-2 text-start but" for="permata">
-                                                                <img class="img-fluid" src="/assets/image/permata.png">
-                                                                <p class="float-end d-inline-block">
-                                                                    <span class="badge bg-primary" id="PERMATA"></span>
-                                                                </p>
+                                                            <label class="btn btn-secondary text-start but w-100" for="permata">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="/assets/image/permata.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">Permata Bank Virtual Account</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
                                                             </label>
                                                         </div>
                                                     </div>
 
                                                 </div>
+                                            </div>
+                                            <div class="card-footer py-0 px-1">
+                                                <h2 class="my-0">
+                                                    <button class="w-100 btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                                        data-target="#collapseVirtualAccount" aria-expanded="true" aria-controls="collapseVirtualAccount">
+                                                        <div class="d-flex justify-content-end py-1">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png"
+                                                                alt="" class="payment-method">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png" alt="" class="payment-method">
+                                                            <img src="/assets/image/mandiri.png" alt="" class="payment-method">
+                                                            <img src="/assets/image/permata.png" alt="" class="payment-method">
+                                                        </div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                        </div>
+
+                                        <!-- LUNATICA PAY -->
+                                        <div class="card">
+                                            <div class="card-header py-0 px-2" id="headingOne">
+                                                <h2 class="my-0">
+                                                    <button class="w-100 btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                                        data-target="#collapseLunaticaPay" aria-expanded="true" aria-controls="collapseLunaticaPay">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="metode-pembayaran mb-0">
+                                                                <span class="pl-1">
+                                                                    <i class="fa-solid fa-building-columns"></i>
+                                                                </span> Lunatica Pay
+                                                            </p>
+                                                            <p class="harga mb-0">Rp 20.000</p>
+                                                        </div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                        
+                                            <div id="collapseLunaticaPay" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTipePembayaran">
+                                                <div class="card-body p-2">
+                                                    <div class="row row-cols-1 row-cols-md-2">
+                                                        <div class="col">
+                                                            <input type="radio" class="btn-check" name="pembayaran" id="bca" autocomplete="off" value="bca">
+                                                            <label class="btn btn-secondary text-start but w-100" for="bca">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <img class="payment-method" src="https://hopestore.id/assets/img/bca_footer.png">
+                                                                    </div>
+                                                                    <div>
+                                                                        <p class="price mb-0">Rp 20.000</p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="spacer d-block my-2 border-top"></span>
+                                                                <div>
+                                                                    <p class="deskripsi-tipe-pembayaran mb-0">BCA</p>
+                                                                    <p class="text-small mb-0">Dicek otomatis</p>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="card-footer py-0 px-1">
+                                                <h2 class="my-0">
+                                                    <button class="w-100 btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                                        data-target="#collapseLunaticaPay" aria-expanded="true" aria-controls="collapseLunaticaPay">
+                                                        <div class="d-flex justify-content-end py-1">
+                                                            <img src="https://hopestore.id/assets/img/bca_footer.png" alt="" class="payment-method">
+                                                        </div>
+                                                    </button>
+                                                </h2>
                                             </div>
                                         </div>
 
@@ -860,7 +964,7 @@ Thanks for not changing the copyright
                                                     placeholder="Nomor Whatsapp ( 628xxxxx )" name="nomor">
                                             </div>
                                             <div class="mb-3">
-                                                <p class="">Dengan membeli otomatis saya menyetujui <span class="fw-bold">Ketentuan Layanan</span> </p>
+                                                <p>Dengan membeli otomatis saya menyetujui <span class="fw-bold">Ketentuan Layanan</span> </p>
                                             </div>
                                             <div class="mb-2">
                                                 <div class="g-recaptcha"
@@ -871,9 +975,9 @@ Thanks for not changing the copyright
                                 </div>
                             </div> <!-- end card -->
 
-                            <!-- Button trigger modal -->
+                            <!-- Button order pesanan -->
                             <button type="button" class="btn btn-lg w-100 btn order-button" data-toggle="modal" data-target="#modalKonfirmasiPesanan">
-                                Beli
+                                <span><i class="fa-solid fa-cart-shopping"></i></span> Order Pesanan
                             </button>
                             
                             <!-- Modal -->
@@ -886,7 +990,7 @@ Thanks for not changing the copyright
                                                 <i class="fa-solid fa-circle-xmark"></i>
                                             </button>
                                         </div>
-                                        <div class="modal-body text-center">
+                                        <div class="modal-body p-0 text-center">
                                             <h2>Data Pesanan</h2>
                                             <div class="informasi-data-pesanan">
                                                 <p class="item mb-1">Diamond Fast</p>
@@ -905,7 +1009,7 @@ Thanks for not changing the copyright
                                                 <p class="mb-0">Harga ini belum termasuk biaya admin!</p>
                                             </div>
                                         </div>
-                                        <div class="modal-footer mx-auto">
+                                        <div class="modal-footer py-3 mx-auto">
                                             <button id="order" class="btn btn-block order-button" type="button">Beli
                                                 Sekarang</button>
                                             <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
@@ -1100,32 +1204,32 @@ Thanks for not changing the copyright
         </div>
 
         <section id="top-footer">
-            <div class="container-fluid py-3">
-                <div class="row row-cols-1 row-cols-md-3 gx-4 text-center text-md-start">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 gx-4 text-center text-md-start py-3">
                     <div class="col">
                         <h3 class="uppercase text-white">LunaticaStore</h3>
                         <span class="black-strip mx-auto"></span>
-                        <div class="mt-4">
+                        <div class="pt-2 pt-md-3">
                             <span class="fw-light">LunaticaStore Penyedia Layanan Top-Up Game Favorite-mu Tanpa
                                 Ribet,
                                 Nikmati Pengalaman Top-Up Yang Menyenangkan Bersama Kami. Kami Menyediakan
                                 Berbagai Metode Pembayaran Yang Mudah Dan Menawarkan Banyak Judul Game.</span>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col mt-3 mt-md-0">
                         <h3 class="uppercase text-white">Peta Situs</h3>
                         <span class="black-strip"></span>
-                        <div class="footer-links d-flex flex-column pt-3">
+                        <div class="footer-links d-flex flex-column pt-2 pt-md-3">
                             <a href="javascript:void(0);">About Us</a>
                             <a href="javascript:void(0);">Help</a>
                             <a href="javascript:void(0);">Contact Us</a>
                             <a href="javascript:void(0);">Privacy & Policy</a>
                         </div>
                     </div>
-                    <div class="col pt-3 pt-md-0">
+                    <div class="col mt-3 mt-md-0">
                         <h3 class="uppercase text-white">Pembayaran</h3>
                         <span class="black-strip"></span>
-                        <div class="mt-md-4">
+                        <div class="pt-2 pt-md-3">
                             <marquee class="list-pembayaran">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Alfamart_logo.svg">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">

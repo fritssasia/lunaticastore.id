@@ -28,7 +28,6 @@ Thanks for not changing the copyright
     <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" disabled />
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/assets/css/custom-style.css">
 
 
     <!-- icons -->
@@ -37,11 +36,14 @@ Thanks for not changing the copyright
     <script src="https://kit.fontawesome.com/99f8e55a96.js" crossorigin="anonymous"></script>
     <!-- third party css -->
     <link href="/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- third party css end -->
 
     <style>
@@ -245,9 +247,12 @@ Thanks for not changing the copyright
         }
     </style>
 
+    <link rel="stylesheet" href="/assets/css/custom-style.css">
+
 </head>
 
-<body class="loading" data-layout-mode="horizontal" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
+<body class="loading" data-layout-mode="horizontal"
+    data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
 
     <!-- Begin page -->
     <div id="wrapper">
@@ -260,10 +265,10 @@ Thanks for not changing the copyright
                 <div class="logo-box">
                     <a href="https://lunaticastore.id" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="/assets/images/lunatica_banner.png" alt="" height="35">
+                            <img src="/lunatica-logo/lunatica_banner.png" alt="" height="35">
                         </span>
                         <span class="logo-lg">
-                            <img src="/assets/images/lunatica_banner.png" alt="" height="65">
+                            <img src="/lunatica-logo/lunatica_banner.png" alt="" height="65">
                             <!--<span class="logo-lg-text-dark">LunaticaStore</span>-->
                         </span>
                     </a>
@@ -287,7 +292,8 @@ Thanks for not changing the copyright
 
                     <li>
                         <!-- Mobile menu toggle (Horizontal Layout)-->
-                        <a class="navbar-toggle nav-link" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                        <a class="navbar-toggle nav-link" data-bs-toggle="collapse"
+                            data-bs-target="#topnav-menu-content">
                             <div class="lines">
                                 <span></span>
                                 <span></span>
@@ -296,6 +302,14 @@ Thanks for not changing the copyright
                         </a>
                         <!-- End mobile menu toggle-->
                     </li>
+
+                    <ul class="navbar-nav d-none d-lg-block">
+                        <li class="nav-item">
+                            <a class="btn btn-primary px-3 py-2 mt-2" href="">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i><span class="ml-3"></span> Masuk
+                            </a>
+                        </li>
+                    </ul>
                 </ul>
 
                 <div class="clearfix"></div>
@@ -321,16 +335,38 @@ Thanks for not changing the copyright
                                     <span> Cari Pesanan </span>
                                 </a>
                             </li>
-                                                        <li class="nav-item dropdown">
-                                <a href="https://lunaticastore.id/login" class="nav-link dropdown-toggle arrow-none">
-                                    <i class="fa fa-sign-in"></i>
-                                    <span> Masuk </span>
+                            <li class="nav-item d-block d-lg-none pb-3">
+                                <a class="btn btn-primary px-3 py-2 mt-2 ml-5" href="">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i><span class="ml-3"></span> Masuk
                                 </a>
                             </li>
-                                                                                    <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="https://wa.me/6281282186998" target="_blank">
-                                    <i class="fa fa-phone"></i>
-                                    <span> Hubungi Kami </span>
+                        </ul> <!-- end navbar-->
+                    </div> <!-- end .collapsed-->
+                </nav>
+            </div> <!-- end container-fluid -->
+        </div> <!-- end topnav-->
+
+        <div class="topnav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+                    <div class="collapse navbar-collapse" id="topnav-menu-content">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="https://lunaticastore.id">
+                                    <i class="fa fa-home"></i>
+                                    <span> Halaman Utama </span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="https://lunaticastore.id/cari">
+                                    <i class="fa fa-search"></i>
+                                    <span> Cari Pesanan </span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-block d-lg-none pb-3">
+                                <a class="btn btn-primary px-3 py-2 mt-2 ml-5" href="">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i><span class="ml-3"></span> Masuk
                                 </a>
                             </li>
                         </ul> <!-- end navbar-->
@@ -347,120 +383,174 @@ Thanks for not changing the copyright
             <div class="content">
                 <!-- Start Content-->
                 <div class="container-fluid">
-                                        <style>
-#myProgress {
-  width: 100%;
-  background-color: #ddd;
-  margin-top: 50px;
-}
+                    <section class="info pt-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="mb-0">INVOICE</h1>
+                                    <p class="mb-0">Kode : 231242132</p>
+                                    <p class="mb-0">Tanggal :</p>
+                                </div>
 
-#myBar {
-  width: 1%;
-  height: 10px;
-  background-color: #04AA6D;
-}
-</style>
-<div id="myProgress">
-  <div id="myBar"></div>
-</div>
+                                <div class="col">
+                                    <p class="mb-0">Status : <span>Not Paid</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-<br>
-<script type="text/javascript">
-    $(document).ready( function () {
-  move();
-});
-  </script>
-<script>
-move();
-var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 650);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-        window.location.reload();
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
-}
-</script>
-<div class="row mt-4 justify-content-center">
-    <div class="col-12 col-md-3">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="fw-bold mb-3 text-dark header text-center">Data Pembeli</h4>
-                                <div class="mt-3">
-                    <label class="form-label header">NICKNAME :</label>
-                    <p class="text-muted">@lunaticastore.id</p>
-                </div>
-                                <div class="mt-3">
-                    <label class="form-label header">PEMBELIAN :</label>
-                    <p class="text-muted">14 Diamond</p>
-                </div>
-            </div>
-        </div>
-    </div>
+                    <section class="progressbar position-relative pb-5">
+                        <div class="position-absolute" style="left: 0; right: 0; top: 0;">
+                            <div class="position-absolute" style="left: 0; right: 0; margin-top: 35px;">
+                                <button class="btn btn-primary position-absolute w-25" style="left: 0; right: 0; margin: 0 auto;">Test</button>
+                            </div>
+                            <div id="myProgress">
+                                <div id="myBar"></div>
+                            </div>
+                        </div>
+                    </section>
 
-    <div class="col-12 col-md-6">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-6">
-                        <label class="fw-bold header">ID Pembelian</label>
-                        <h4 class="text-muted">ep77lb</h4>
-                        <label class="fw-bold header">Status Pembelian</label>
-                                                <h4><span class="badge bg-success">Success</span></h4>
-                                                <label class="fw-bold header">Jumlah Pembayaran</label>
-                        <h4 class="text-muted">Rp. 10,557</h4>
+                    <br>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            move();
+                        });
+                    </script>
+                    <script>
+                        move();
+                        var i = 0;
+
+                        function move() {
+                            if (i == 0) {
+                                i = 1;
+                                var elem = document.getElementById("myBar");
+                                var width = 1;
+                                var id = setInterval(frame, 650);
+
+                                function frame() {
+                                    if (width >= 100) {
+                                        clearInterval(id);
+                                        i = 0;
+                                        window.location.reload();
+                                    } else {
+                                        width++;
+                                        elem.style.width = width + "%";
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+                    <div class="row mt-4 justify-content-center">
+                        <div class="col-12 col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="fw-bold mb-3 text-dark header text-center">Data Pembeli</h4>
+                                    <div class="mt-3">
+                                        <label class="form-label header">NICKNAME :</label>
+                                        <p class="text-muted">@lunaticastore.id</p>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label class="form-label header">PEMBELIAN :</label>
+                                        <p class="text-muted">14 Diamond</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="fw-bold header">ID Pembelian</label>
+                                            <h4 class="text-muted">ep77lb</h4>
+                                            <label class="fw-bold header">Status Pembelian</label>
+                                            <h4><span class="badge bg-success">Success</span></h4>
+                                            <label class="fw-bold header">Jumlah Pembayaran</label>
+                                            <h4 class="text-muted">Rp. 10,557</h4>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <label class="fw-bold header">Tanggal</label>
+                                            <h5 class="text-muted fs-10">2022-06-05 10:15:15</h5>
+                                            <label class="fw-bold header">Expired</label>
+                                            <h5 class="text-muted fs-10">2022-06-06 10:15:15</h5>
+                                            <label class="fw-bold header">Metode Pembayaran</label>
+                                            <h4 class="text-muted">BCA</h4>
+                                            <h5 class="text-primary">No Rekening : 8415345760<br>A.N YOEL ARMANDO</h5>
+                                        </div>
+                                    </div>
+                                    <p class="fw-bold text-muted mt-3"><span class="header">Catatan</span>: Mohon untuk
+                                        mengirim dana dengan jumlah <span class="fw-bold header">Rp. 10,557</span>.
+                                        Nominal tersebut sudah termasuk dengan biaya admin.
+
+                                    </p>
+                                </div>
+                            </div> <!-- end card -->
+
+                        </div><!-- end col -->
                     </div>
-                    <div class="col-6 text-end">
-                        <label class="fw-bold header">Tanggal</label>
-                        <h5 class="text-muted fs-10">2022-06-05 10:15:15</h5>
-                        <label class="fw-bold header">Expired</label>
-                        <h5 class="text-muted fs-10">2022-06-06 10:15:15</h5>
-                        <label class="fw-bold header">Metode Pembayaran</label>
-                        <h4 class="text-muted">BCA</h4>
-                                                <h5 class="text-primary">No Rekening : 8415345760<br>A.N YOEL ARMANDO</h5>
-                                            </div>
-                </div>
-                                                <p class="fw-bold text-muted mt-3"><span class="header">Catatan</span>: Mohon untuk mengirim dana dengan jumlah <span class="fw-bold header">Rp. 10,557</span>. Nominal tersebut sudah termasuk dengan biaya admin.
-                                        
-                </p>
-            </div>
-        </div> <!-- end card -->
-
-    </div><!-- end col -->
-        </div>
 
                 </div> <!-- container -->
 
             </div> <!-- content -->
 
-                        <!-- Footer Start -->
-            <footer class="footer" style="background-color:#43267D; color:white;">
+            <section id="top-footer">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script> &copy; Copyright LunaticaStore
+                    <div class="row row-cols-1 row-cols-md-3 gx-4 text-center text-md-start py-3">
+                        <div class="col">
+                            <h3 class="uppercase text-white">LunaticaStore</h3>
+                            <span class="black-strip mx-auto"></span>
+                            <div class="pt-2 pt-md-3">
+                                <span class="fw-light">LunaticaStore Penyedia Layanan Top-Up Game Favorite-mu Tanpa
+                                    Ribet,
+                                    Nikmati Pengalaman Top-Up Yang Menyenangkan Bersama Kami. Kami Menyediakan
+                                    Berbagai Metode Pembayaran Yang Mudah Dan Menawarkan Banyak Judul Game.</span>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="text-md-end footer-links d-none d-sm-block">
-                                <a href="javascript:void(0);" style="color:white;">About Us</a>
-                                <a href="javascript:void(0);" style="color:white;">Help</a>
-                                <a href="javascript:void(0);" style="color:white;">Contact Us</a>
+                        <div class="col mt-3 mt-md-0">
+                            <h3 class="uppercase text-white">Peta Situs</h3>
+                            <span class="black-strip"></span>
+                            <div class="footer-links d-flex flex-column pt-2 pt-md-3">
+                                <a href="javascript:void(0);">About Us</a>
+                                <a href="javascript:void(0);">Help</a>
+                                <a href="javascript:void(0);">Contact Us</a>
+                                <a href="javascript:void(0);">Privacy & Policy</a>
+                            </div>
+                        </div>
+                        <div class="col mt-3 mt-md-0">
+                            <h3 class="uppercase text-white">Pembayaran</h3>
+                            <span class="black-strip"></span>
+                            <div class="pt-2 pt-md-3">
+                                <marquee class="list-pembayaran">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Alfamart_logo.svg">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">
+                                    <img src="https://hopestore.id/assets/img/bca_footer.png">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/1200px-Bank_Mandiri_logo_2016.svg.png">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png">
+                                    <img src="https://lunaticastore.id/assets/permata.png">
+                                    <img src="https://rexonmarket.id/assets/payment/ovo.png">
+                                    <img src="https://lelogama.go-jek.com/logo/GoPay-white.text.png">
+                                    <img src="https://hopestore.id/assets/img/dana_footer.png">
+                                    <img src="https://hopestore.id/assets/img/shopay_footer.png">
+                                    <img src="https://lunaticastore.id/assets/link.png">
+                                    <img src="https://hopestore.id/assets/img/qris_footer.png">
+                                </marquee>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid text-center">
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> &copy; Copyright LunaticaStore
                 </div>
             </footer>
             <!-- end Footer -->
@@ -530,7 +620,7 @@ function move() {
         });
 
         mybutton = document.getElementById("btn-gotop");
-        window.onscroll = function() {
+        window.onscroll = function () {
             scrollFunction()
         };
 
@@ -541,7 +631,7 @@ function move() {
                 mybutton.style.display = "none";
             }
         }
-        $('#myModal').on('shown.bs.modal', function() {
+        $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
         })
 
