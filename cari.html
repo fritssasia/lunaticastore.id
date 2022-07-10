@@ -179,8 +179,9 @@ Thanks for not changing the copyright
             height: 45px;
             bottom: 80px;
             right: 20px;
-            color: #FFF;
-            background: #55c759;
+            color: #FFF !important;
+            background: #5e21d8;
+            border: 1px solid #FFF;
             border-radius: 6px;
             text-align: center;
             font-size: 30px;
@@ -304,7 +305,7 @@ Thanks for not changing the copyright
 
                     <ul class="navbar-nav d-none d-lg-block">
                         <li class="nav-item">
-                            <a class="btn btn-primary px-3 py-2 mt-2" href="">
+                            <a class="btn btn-login px-3 py-2 mt-2" href="">
                                 <i class="fa fa-sign-in" aria-hidden="true"></i><span class="ml-3"></span> Masuk
                             </a>
                         </li>
@@ -334,8 +335,16 @@ Thanks for not changing the copyright
                                     <span> Cari Pesanan </span>
                                 </a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="#">
+                                    <i class="fa-solid fa-list"></i>
+                                    <span> Daftar Layanan </span>
+                                </a>
+                            </li>
+
+
                             <li class="nav-item d-block d-lg-none pb-3">
-                                <a class="btn btn-primary px-3 py-2 mt-2 ml-5" href="">
+                                <a class="btn btn-login px-3 py-2 mt-2 ml-5" href="">
                                     <i class="fa fa-sign-in" aria-hidden="true"></i><span class="ml-3"></span> Masuk
                                 </a>
                             </li>
@@ -353,9 +362,9 @@ Thanks for not changing the copyright
             <div class="content">
                 <!-- Start Content-->
                 <div class="container-fluid">
-                    <div class="row mt-4">
-                        <div class="col-12">
-                            <div class="card mt-2">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+                        <div class="d-block w-100">
+                            <div class="card" id="search-form">
                                 <div class="card-body">
                                     <h4 class="page-title">Cari Pesanan</h4>
                                     <form class="form-horizontal mt-4" action="https://lunaticastore.id/cari"
@@ -374,7 +383,7 @@ Thanks for not changing the copyright
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-info">Cari</button>
+                                        <button type="submit" class="btn px-3"><i class="fa fa-search"></i> Cari</button>
                                     </form>
                                 </div>
                             </div>
@@ -384,12 +393,12 @@ Thanks for not changing the copyright
 
             </div> <!-- content -->
 
-            
+
         </div>
 
         <section id="top-footer">
             <div class="container-fluid">
-                <div class="row row-cols-1 row-cols-md-3 gx-4 about text-center text-md-start py-3">
+                <div class="row row-cols-1 row-cols-md-3 gx-4 text-center text-md-start py-3">
                     <div class="col">
                         <h3 class="uppercase text-white">LunaticaStore</h3>
                         <span class="black-strip mx-auto"></span>
@@ -437,7 +446,7 @@ Thanks for not changing the copyright
                 </div>
             </div>
         </section>
-        
+
         <!-- Footer Start -->
         <footer class="footer">
             <div class="container-fluid text-center">
@@ -456,11 +465,8 @@ Thanks for not changing the copyright
 
     </div>
     <!-- END wrapper -->
-    <a href="https://ig.me/rexonmarket.id/" class="btn-insta-float shadow-sm" target="_blank">
-        <i class="fab fa-instagram" style="margin-top: 9px;"></i>
-    </a>
-    <a href="https://wa.me/6285155299353" class="btn-call-float shadow-sm" target="_blank">
-        <i class="fab fa-whatsapp" style="margin-top: 9px;"></i>
+    <a href="https://wa.me/6281282186998" class="btn-call-float shadow-sm" target="_blank">
+        <i class="fas fa-comment-dots"></i>
     </a>
     <a href="#" id="btn-gotop" onclick="topFunction()" style="display: block;">
         <i class="fas fa-angle-up"></i>
