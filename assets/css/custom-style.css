@@ -1,3 +1,147 @@
+/* === INTERNAL CSS FOR ALL PAGE : START === */
+body[data-topbar-color=light] .navbar-custom {
+    position: absolute;
+}
+
+.topnav {
+    position: absolute;
+}
+
+.swiper {
+    width: 800px;
+    height: 350px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 60%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 40%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 20%;
+}
+
+.content-page {
+    margin-left: 250px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.swal-title {
+    margin-bottom: 28px;
+    font-size: 16px !important;
+    color: white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    padding: .8em 1em !important;
+    text-align: left !important;
+}
+
+.swal-text {
+    color: white;
+    font-weight: 200;
+    text-align: left !important;
+    font-size: 16px !important;
+}
+
+.swal-modal {
+    background-color: #222831;
+}
+
+.black-strip {
+    background-color: #5e21d8;
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.subscribe {
+    width: 100% !important;
+    background-color: #5e21d8;
+    position: absolute;
+    right: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.social {
+    margin: 0 15px;
+}
+
+.btn-wa {
+    color: #0284FE !important;
+}
+
+.btn-call-float {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 80px;
+    right: 20px;
+    color: #FFF !important;
+    background: #5e21d8;
+    border: 1px solid #FFF;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 99999;
+}
+
+#btn-gotop {
+    display: none;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+    background: #5e21d8;
+    color: #FFF;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 99999;
+}
+
+.btn-link {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer !important;
+    padding: 0;
+}
+
+@media (max-width: 576px) {
+    .content-page {
+        margin-left: 250px;
+        overflow: hidden;
+        min-height: 80vh;
+        margin-top: 70px;
+    }
+
+    .swiper {
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .product {
+        width: 100px;
+    }
+
+}
+
+/* === INTERNAL CSS FOR ALL PAGE : END === */
+
 body {
     background-color: #e5e5e5;
 }
@@ -203,10 +347,11 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-    width: 28px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     content: "";
-    background: url(https://bangjeff.com/assets/img/verified.png) top/cover;
+    background: url(../icons/checked.png) top/cover;
+    border-top-right-radius: .20rem;
     text-align: center;
 }
 
@@ -344,6 +489,26 @@ p {
     font-size: 17px;
 }
 
+#buyer-data {
+    background-color: #5e21d8;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+#buyer-data th,
+td {
+    font-size: 12px;
+}
+
+#payment-method .card {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+#payment-method .qris .qris-logo {
+    width: 150px;
+}
+
 /* === PAGE PROSES PEMBAYARAN : START === */
 
 /* === CARI PESANAN : START === */
@@ -364,6 +529,7 @@ p {
     color: #ffffff;
     filter: brightness(80%);
 }
+
 /* === CARI PESANAN : END === */
 
 /* === RESPONSIVE CSS === */
@@ -399,6 +565,19 @@ p {
     }
 
     /* ---- FOOTER : END --- */
+
+    /* --- PROSES PEMBAYARAN : START --- */
+    #buyer-data th,
+    td {
+        font-size: 15px;
+    }
+
+    #payment-details .card {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    /* --- PROSES PEMBAYARAN : END --- */
 }
 
 /* // Large devices (desktops, 992px and up) */
