@@ -78,10 +78,6 @@ body[data-topbar-color=light] .navbar-custom {
     margin: 0 15px;
 }
 
-.btn-wa {
-    color: #0284FE !important;
-}
-
 .btn-call-float {
     position: fixed;
     width: 45px;
@@ -118,6 +114,10 @@ body[data-topbar-color=light] .navbar-custom {
     background: none;
     cursor: pointer !important;
     padding: 0;
+}
+
+input:focus {
+    border-color: #5e21d8 !important;
 }
 
 @media (max-width: 576px) {
