@@ -505,7 +505,7 @@ td {
     border-top-right-radius: 0px !important;
 }
 
-#payment-method .qris .qris-logo {
+#payment-method .qris-logo, .bca-logo, .ovo-logo {
     width: 150px;
 }
 
